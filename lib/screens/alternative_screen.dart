@@ -60,7 +60,18 @@ class AlternativeProduct {
     this.brand,
     this.rating,
     this.externalSource,
-  }) : id = id ?? DateTime.now().millisecondsSinceEpoch.toString();
+  }) : id = id ?? _generateUniqueId(name, ecoScore, materialType, brand);
+
+  // Generate consistent unique ID based on product properties
+  static String _generateUniqueId(
+    String name,
+    String ecoScore,
+    String materialType,
+    String? brand,
+  ) {
+    final components = '${name}_${ecoScore}_${materialType}_${brand ?? ""}';
+    return components.hashCode.abs().toString();
+  }
 
   Map<String, dynamic> toFirestore({bool includeTimestamp = false}) {
     final data = {
@@ -619,25 +630,33 @@ class _AlternativeScreenState extends State<AlternativeScreen> {
         final altData = data['alternatives'] as List<dynamic>?;
 
         if (altData != null) {
-          final alternatives = altData
-              .map(
-                (alt) => AlternativeProduct(
-                  name: alt['name'] ?? '',
-                  ecoScore: alt['ecoScore'] ?? 'N/A',
-                  materialType: alt['materialType'] ?? '',
-                  benefit: alt['benefit'] ?? '',
-                  whereToBuy: alt['whereToBuy'] ?? '',
-                  carbonSavings: alt['carbonSavings'] ?? '',
-                  imagePath: alt['imagePath'] ?? '',
-                  buyLink: alt['buyLink'] ?? '',
-                  shortDescription: alt['shortDescription'] ?? '',
-                  category: alt['category'] ?? '',
-                  price: alt['price']?.toDouble(),
-                  brand: alt['brand'],
-                  rating: alt['rating']?.toDouble(),
-                ),
-              )
-              .toList();
+          final alternatives = altData.map((alt) {
+            final name = alt['name'] ?? '';
+            final ecoScore = alt['ecoScore'] ?? 'N/A';
+            final materialType = alt['materialType'] ?? '';
+            final brand = alt['brand'];
+            return AlternativeProduct(
+              id: AlternativeProduct._generateUniqueId(
+                name,
+                ecoScore,
+                materialType,
+                brand,
+              ),
+              name: name,
+              ecoScore: ecoScore,
+              materialType: materialType,
+              benefit: alt['benefit'] ?? '',
+              whereToBuy: alt['whereToBuy'] ?? '',
+              carbonSavings: alt['carbonSavings'] ?? '',
+              imagePath: alt['imagePath'] ?? '',
+              buyLink: alt['buyLink'] ?? '',
+              shortDescription: alt['shortDescription'] ?? '',
+              category: alt['category'] ?? '',
+              price: alt['price']?.toDouble(),
+              brand: brand,
+              rating: alt['rating']?.toDouble(),
+            );
+          }).toList();
 
           scans.add(
             ScannedProductWithAlternatives(
@@ -685,11 +704,21 @@ class _AlternativeScreenState extends State<AlternativeScreen> {
 
         if (altData != null) {
           for (var alt in altData) {
+            final name = alt['name'] ?? '';
+            final ecoScore = alt['ecoScore'] ?? 'N/A';
+            final materialType = alt['materialType'] ?? '';
+            final brand = alt['brand'];
             allAlternatives.add(
               AlternativeProduct(
-                name: alt['name'] ?? '',
-                ecoScore: alt['ecoScore'] ?? 'N/A',
-                materialType: alt['materialType'] ?? '',
+                id: AlternativeProduct._generateUniqueId(
+                  name,
+                  ecoScore,
+                  materialType,
+                  brand,
+                ),
+                name: name,
+                ecoScore: ecoScore,
+                materialType: materialType,
                 benefit: alt['benefit'] ?? '',
                 whereToBuy: alt['whereToBuy'] ?? '',
                 carbonSavings: alt['carbonSavings'] ?? '',
@@ -698,7 +727,7 @@ class _AlternativeScreenState extends State<AlternativeScreen> {
                 shortDescription: alt['shortDescription'] ?? '',
                 category: alt['category'] ?? '',
                 price: alt['price']?.toDouble(),
-                brand: alt['brand'],
+                brand: brand,
                 rating: alt['rating']?.toDouble(),
               ),
             );
