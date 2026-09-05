@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:intl/intl.dart';
-import 'package:ecopilot_test/utils/constants.dart';
-import 'package:ecopilot_test/auth/firebase_service.dart';
-import 'package:ecopilot_test/utils/rank_utils.dart';
-import 'package:ecopilot_test/services/streak_notification_manager.dart';
-import 'package:ecopilot_test/utils/challenge_generator.dart';
+import 'package:ecopilot/utils/constants.dart';
+import 'package:ecopilot/auth/firebase_service.dart';
+import 'package:ecopilot/utils/rank_utils.dart';
+import 'package:ecopilot/services/streak_notification_manager.dart';
+import 'package:ecopilot/utils/challenge_generator.dart';
 
 // Placeholder data structure for challenge and user progress
 class Challenge {

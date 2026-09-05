@@ -3,9 +3,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '/utils/constants.dart';
 import 'package:intl/intl.dart';
-import 'package:ecopilot_test/models/product_analysis_data.dart';
-import 'package:ecopilot_test/screens/alternative_screen.dart';
-import 'package:ecopilot_test/screens/better_alternative_screen.dart';
+import 'package:ecopilot/models/product_analysis_data.dart';
+import 'package:ecopilot/screens/better_alternative_screen.dart';
 
 class RecentActivityScreen extends StatelessWidget {
   const RecentActivityScreen({super.key});

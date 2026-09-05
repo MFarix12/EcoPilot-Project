@@ -1,21 +1,21 @@
-﻿import 'package:ecopilot_test/screens/scan_screen.dart';
+﻿import 'package:ecopilot/screens/scan_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:ecopilot_test/screens/disposal_scan_screen.dart';
-import 'package:ecopilot_test/screens/barcode_scanner_screen.dart';
+import 'package:ecopilot/screens/disposal_scan_screen.dart';
+import 'package:ecopilot/screens/barcode_scanner_screen.dart';
 // Avoid importing kPrimaryGreen twice: hide it from the recent_disposal import
-import 'package:ecopilot_test/screens/recent_disposal_screen.dart';
-import 'package:ecopilot_test/utils/constants.dart';
-import 'package:ecopilot_test/widgets/app_drawer.dart';
-import 'package:ecopilot_test/widgets/bottom_navigation.dart';
-import 'package:ecopilot_test/screens/home_screen.dart';
-import 'package:ecopilot_test/screens/alternative_screen.dart';
-import 'package:ecopilot_test/screens/profile_screen.dart';
-import 'package:ecopilot_test/screens/eco_assistant_screen.dart';
-import 'package:ecopilot_test/auth/firebase_service.dart';
+import 'package:ecopilot/screens/recent_disposal_screen.dart';
+import 'package:ecopilot/utils/constants.dart';
+import 'package:ecopilot/widgets/app_drawer.dart';
+import 'package:ecopilot/widgets/bottom_navigation.dart';
+import 'package:ecopilot/screens/home_screen.dart';
+import 'package:ecopilot/screens/alternative_screen.dart';
+import 'package:ecopilot/screens/profile_screen.dart';
+import 'package:ecopilot/screens/eco_assistant_screen.dart';
+import 'package:ecopilot/auth/firebase_service.dart';
 
 /// Clean Disposal Guidance screen (hub + details).
 class DisposalGuidanceScreen extends StatefulWidget {

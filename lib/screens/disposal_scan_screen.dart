@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 
-import 'package:ecopilot_test/utils/cloudinary_config.dart';
-import 'package:ecopilot_test/services/cloudinary_service.dart';
-import 'package:ecopilot_test/utils/constants.dart';
+import 'package:ecopilot/utils/cloudinary_config.dart';
+import 'package:ecopilot/services/cloudinary_service.dart';
+import 'package:ecopilot/utils/constants.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -14,9 +14,9 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
-import 'package:ecopilot_test/models/product_analysis_data.dart';
-import 'package:ecopilot_test/auth/firebase_service.dart';
-import 'package:ecopilot_test/screens/result_disposal_screen.dart';
+import 'package:ecopilot/models/product_analysis_data.dart';
+import 'package:ecopilot/auth/firebase_service.dart';
+import 'package:ecopilot/screens/result_disposal_screen.dart';
 
 /// A lightweight scan screen that lets the user take a photo or pick from gallery,
 /// runs Gemini analysis to extract product info, uploads the image

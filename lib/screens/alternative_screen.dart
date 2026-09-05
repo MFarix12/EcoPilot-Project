@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:ecopilot_test/widgets/app_drawer.dart';
-import 'package:ecopilot_test/widgets/bottom_navigation.dart';
-import 'package:ecopilot_test/utils/constants.dart';
+import 'package:ecopilot/widgets/app_drawer.dart';
+import 'package:ecopilot/widgets/bottom_navigation.dart';
+import 'package:ecopilot/utils/constants.dart';
 import 'home_screen.dart';
 import 'scan_screen.dart';
 import 'disposal_guidance_screen.dart';
@@ -238,8 +238,9 @@ class AlternativeProductCard extends StatelessWidget {
                                       height: 110,
                                       fit: BoxFit.cover,
                                       loadingBuilder: (context, child, loadingProgress) {
-                                        if (loadingProgress == null)
+                                        if (loadingProgress == null) {
                                           return child;
+                                        }
                                         return Center(
                                           child: SizedBox(
                                             width: 35,
@@ -549,7 +550,7 @@ class _AlternativeScreenState extends State<AlternativeScreen> {
     },
   ];
 
-  int _selectedIndex = 1;
+  final int _selectedIndex = 1;
 
   @override
   void initState() {

@@ -1,8 +1,8 @@
 import 'dart:io';
 // NOTE: ⚠️ UNCOMMENT THESE IMPORTS AFTER ADDING THE 'camera' PACKAGE TO PUBSPEC.YAML
 import 'package:camera/camera.dart';
-import 'package:ecopilot_test/screens/disposal_guidance_screen.dart';
-import 'package:ecopilot_test/screens/home_screen.dart';
+import 'package:ecopilot/screens/disposal_guidance_screen.dart';
+import 'package:ecopilot/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
@@ -12,13 +12,13 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:ecopilot_test/auth/firebase_service.dart';
+import 'package:ecopilot/auth/firebase_service.dart';
 import 'profile_screen.dart' as profile_screen;
 import 'alternative_screen.dart' as alternative_screen;
-import 'package:ecopilot_test/widgets/app_drawer.dart';
+import 'package:ecopilot/widgets/app_drawer.dart';
 import '/utils/constants.dart';
-import 'package:ecopilot_test/models/product_analysis_data.dart';
-import 'package:ecopilot_test/screens/result_screen.dart';
+import 'package:ecopilot/models/product_analysis_data.dart';
+import 'package:ecopilot/screens/result_screen.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 
 // Colors are defined in lib/utils/constants.dart
@@ -752,7 +752,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
           }
           return;
         } else {
-          throw e; // Re-throw other errors
+          rethrow; // Re-throw other errors
         }
       }
 

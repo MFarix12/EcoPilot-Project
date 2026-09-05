@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ecopilot_test/models/product_analysis_data.dart';
-import 'package:ecopilot_test/screens/better_alternative_screen.dart';
+import 'package:ecopilot/models/product_analysis_data.dart';
+import 'package:ecopilot/screens/better_alternative_screen.dart';
 
 /// Wrapper screen that shows alternatives for a specific scanned product
 /// Redirects to BetterAlternativeScreen for generation

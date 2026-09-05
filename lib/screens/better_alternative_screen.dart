@@ -9,7 +9,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:convert';
 import '../services/generative_service.dart';
 import '../models/product_analysis_data.dart';
-import 'package:ecopilot_test/utils/constants.dart';
+import 'package:ecopilot/utils/constants.dart';
 import 'alternative_screen.dart';
 
 // Re-export shared classes from alternative_screen.dart

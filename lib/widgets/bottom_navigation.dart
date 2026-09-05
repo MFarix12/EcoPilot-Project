@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ecopilot_test/utils/constants.dart' as constants;
+import 'package:ecopilot/utils/constants.dart' as constants;
 
 /// Reusable bottom navigation bar for the app.
 ///

@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:ecopilot_test/screens/disposal_guidance_screen.dart';
+import 'package:ecopilot/screens/disposal_guidance_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -7,19 +7,18 @@ import 'package:intl/intl.dart'; // Required for date formatting
 import 'package:share_plus/share_plus.dart';
 import '../auth/firebase_service.dart';
 import 'profile_screen.dart';
-import 'alternative_screen.dart';
 import 'better_alternative_screen.dart';
 import 'alternative_screen.dart' as alt_screen;
 import '/screens/scan_screen.dart';
 import 'notification_screen.dart';
 import 'recent_activity_screen.dart';
 import 'eco_assistant_screen.dart';
-import 'package:ecopilot_test/utils/constants.dart';
-import 'package:ecopilot_test/utils/challenge_generator.dart';
-import 'package:ecopilot_test/utils/tip_generator.dart';
-import 'package:ecopilot_test/widgets/app_drawer.dart';
-import 'package:ecopilot_test/widgets/bottom_navigation.dart';
-import 'package:ecopilot_test/models/product_analysis_data.dart';
+import 'package:ecopilot/utils/constants.dart';
+import 'package:ecopilot/utils/challenge_generator.dart';
+import 'package:ecopilot/utils/tip_generator.dart';
+import 'package:ecopilot/widgets/app_drawer.dart';
+import 'package:ecopilot/widgets/bottom_navigation.dart';
+import 'package:ecopilot/models/product_analysis_data.dart';
 import 'daily_challenge_screen.dart';
 
 // Placeholder data structure for challenge and user progress

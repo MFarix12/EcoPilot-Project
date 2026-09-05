@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 import '/auth/firebase_service.dart';
-import 'package:ecopilot_test/utils/rank_utils.dart';
+import 'package:ecopilot/utils/rank_utils.dart';
 import '/utils/constants.dart'
     as constants; // Assumed location for kPrimaryGreen/kPrimaryYellow
-import 'package:ecopilot_test/widgets/app_drawer.dart';
-import 'package:ecopilot_test/widgets/bottom_navigation.dart';
+import 'package:ecopilot/widgets/app_drawer.dart';
+import 'package:ecopilot/widgets/bottom_navigation.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:intl/intl.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:lottie/lottie.dart';
 import 'alternative_screen.dart';
 import 'home_screen.dart';

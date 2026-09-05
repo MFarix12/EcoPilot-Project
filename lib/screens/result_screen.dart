@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'alternative_screen.dart';
 import 'better_alternative_screen.dart';
 import '../models/product_analysis_data.dart';
-import 'package:ecopilot_test/utils/constants.dart';
+import 'package:ecopilot/utils/constants.dart';
 
 class ResultScreen extends StatelessWidget {
   final ProductAnalysisData analysisData;

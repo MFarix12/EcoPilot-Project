@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:ecopilot_test/auth/firebase_service.dart';
-import 'package:ecopilot_test/auth/landing.dart';
-import 'package:ecopilot_test/screens/profile_screen.dart' as profile_screen;
-import 'package:ecopilot_test/screens/alternative_screen.dart'
+import 'package:ecopilot/auth/firebase_service.dart';
+import 'package:ecopilot/auth/landing.dart';
+import 'package:ecopilot/screens/profile_screen.dart' as profile_screen;
+import 'package:ecopilot/screens/alternative_screen.dart'
     as alternative_screen;
-import 'package:ecopilot_test/screens/disposal_guidance_screen.dart';
-import 'package:ecopilot_test/screens/notification_screen.dart';
-import 'package:ecopilot_test/screens/setting_screen.dart';
-import 'package:ecopilot_test/screens/support_screen.dart';
-import 'package:ecopilot_test/screens/eco_assistant_screen.dart';
-import 'package:ecopilot_test/screens/redeem_screen.dart';
-import 'package:ecopilot_test/utils/constants.dart';
+import 'package:ecopilot/screens/disposal_guidance_screen.dart';
+import 'package:ecopilot/screens/notification_screen.dart';
+import 'package:ecopilot/screens/setting_screen.dart';
+import 'package:ecopilot/screens/support_screen.dart';
+import 'package:ecopilot/screens/eco_assistant_screen.dart';
+import 'package:ecopilot/screens/redeem_screen.dart';
+import 'package:ecopilot/utils/constants.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});

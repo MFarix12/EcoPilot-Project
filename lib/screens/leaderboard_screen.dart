@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ecopilot_test/auth/firebase_service.dart';
+import 'package:ecopilot/auth/firebase_service.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:intl/intl.dart';
 
 // Define a placeholder for kPrimaryGreen if it's not in constants.dart
 // I will assume kPrimaryGreen is a constant Color object in your constants.dart

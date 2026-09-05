@@ -1,9 +1,9 @@
 ﻿import 'package:flutter/material.dart';
-import 'package:ecopilot_test/models/product_analysis_data.dart';
-import 'package:ecopilot_test/utils/constants.dart';
+import 'package:ecopilot/models/product_analysis_data.dart';
+import 'package:ecopilot/utils/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:ecopilot_test/auth/firebase_service.dart';
-import 'package:ecopilot_test/screens/disposal_guidance_screen.dart';
+import 'package:ecopilot/auth/firebase_service.dart';
+import 'package:ecopilot/screens/disposal_guidance_screen.dart';
 
 class ResultDisposalScreen extends StatelessWidget {
   final ProductAnalysisData analysisData;

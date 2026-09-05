@@ -11,7 +11,7 @@ import 'package:image/image.dart' as img;
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart'; // Added for Firestore
 import 'package:intl/intl.dart';
-import 'package:ecopilot_test/utils/rank_utils.dart';
+import 'package:ecopilot/utils/rank_utils.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 

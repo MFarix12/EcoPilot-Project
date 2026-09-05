@@ -1,6 +1,6 @@
 // lib/home/support_screen.dart
 
-import 'package:ecopilot_test/screens/home_screen.dart';
+import 'package:ecopilot/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';

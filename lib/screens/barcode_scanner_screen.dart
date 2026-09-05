@@ -5,12 +5,12 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
-import 'package:ecopilot_test/utils/constants.dart';
-import 'package:ecopilot_test/utils/cloudinary_config.dart';
-import 'package:ecopilot_test/services/cloudinary_service.dart';
-import 'package:ecopilot_test/models/product_analysis_data.dart';
-import 'package:ecopilot_test/auth/firebase_service.dart';
-import 'package:ecopilot_test/screens/result_disposal_screen.dart';
+import 'package:ecopilot/utils/constants.dart';
+import 'package:ecopilot/utils/cloudinary_config.dart';
+import 'package:ecopilot/services/cloudinary_service.dart';
+import 'package:ecopilot/models/product_analysis_data.dart';
+import 'package:ecopilot/auth/firebase_service.dart';
+import 'package:ecopilot/screens/result_disposal_screen.dart';
 
 class BarcodeScannerScreen extends StatefulWidget {
   const BarcodeScannerScreen({super.key});

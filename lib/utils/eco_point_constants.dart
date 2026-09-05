@@ -2,6 +2,7 @@
 ///
 /// This file defines all point values and limits for the eco point reward system.
 /// Points contribute simultaneously to weekly, monthly, and all-time leaderboards.
+library;
 
 class EcoPointConstants {
   // ============================================

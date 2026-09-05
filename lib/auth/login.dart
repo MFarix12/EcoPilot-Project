@@ -1,5 +1,5 @@
-import 'package:ecopilot_test/auth/landing.dart';
-import 'package:ecopilot_test/auth/signup.dart';
+import 'package:ecopilot/auth/landing.dart';
+import 'package:ecopilot/auth/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io' show Platform;

@@ -1,7 +1,7 @@
 // lib/services/database_service.dart
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:ecopilot_test/models/database_models.dart';
+import 'package:ecopilot/models/database_models.dart';
 
 /// Database Service for EcoPilot
 /// Provides CRUD operations for all database tables

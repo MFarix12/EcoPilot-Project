@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 import '../../utils/constants.dart';
-import 'package:ecopilot_test/utils/color_extensions.dart';
+import 'package:ecopilot/utils/color_extensions.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});

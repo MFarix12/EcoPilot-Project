@@ -1,5 +1,5 @@
-name: ecopilot_test
-description: "A new Flutter project."
+name: ecopilot
+description: "A smart eco-friendly shopping mobile application that uses product scanning to evaluate sustainability, provide eco-scores, recommend greener alternatives, and offer personalized disposal guidance."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev

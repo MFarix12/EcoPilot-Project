@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:ecopilot_test/screens/home_screen.dart';
+import 'package:ecopilot/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:shared_preferences/shared_preferences.dart';

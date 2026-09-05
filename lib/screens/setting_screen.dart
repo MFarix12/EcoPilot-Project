@@ -1,6 +1,6 @@
 // lib/home/setting_screen.dart
 
-import 'package:ecopilot_test/screens/home_screen.dart';
+import 'package:ecopilot/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -13,7 +13,7 @@ import '../../utils/theme_provider.dart';
 import 'profile_screen.dart';
 import 'notification_screen.dart';
 import 'support_screen.dart';
-import 'package:ecopilot_test/screens/profile_screen.dart'
+import 'package:ecopilot/screens/profile_screen.dart'
     as ps
     show ChangePasswordScreen;
 

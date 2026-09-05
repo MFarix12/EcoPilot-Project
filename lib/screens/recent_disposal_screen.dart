@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:ecopilot_test/utils/constants.dart';
-import 'package:ecopilot_test/screens/disposal_guidance_screen.dart';
+import 'package:ecopilot/utils/constants.dart';
+import 'package:ecopilot/screens/disposal_guidance_screen.dart';
 
 class RecentDisposalScreen extends StatefulWidget {
   const RecentDisposalScreen({super.key});
